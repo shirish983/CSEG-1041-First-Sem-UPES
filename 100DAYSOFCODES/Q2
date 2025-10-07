@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+    int a =40;
+    int b =50;
+    int sum , difference ,product ;
+   float quotient ;
+   sum = a +b;
+   difference = a - b;
+   product = a*b;
+   quotient =(float) a/b;
+   printf("first number: %d\n", a);
+   printf("second number :%d\n", b);
+   printf("sum = %d\n",sum);
+   printf("difference =%d\n",difference);
+   printf("product =%d\n", product);
+   printf("quotient=%.2f\n",quotient);
+   return 0;
+
+}
