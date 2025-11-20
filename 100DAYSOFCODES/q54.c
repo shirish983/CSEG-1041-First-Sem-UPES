@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, space;
+
+    // Upper half
+    for (i = 1; i <= 7; i += 2) {
+        space = (7 - i) / 2;
+        for (j = 1; j <= space; j++)
+            printf(" ");
+        for (j = 1; j <= i; j++)
+            printf("*");
+        printf("\n");
+    }
+
+    // Lower half
+    for (i = 5; i >= 1; i -= 2) {
+        space = (7 - i) / 2;
+        for (j = 1; j <= space; j++)
+            printf(" ");
+        for (j = 1; j <= i; j++)
+            printf("*");
+        printf("\n");
+    }
+
+    return 0;
+}
